@@ -1,6 +1,6 @@
 const output = document.getElementById('output');
 
-// creating constuctor
+// creating const
 
 function HotWheel(name,year,color,numberOfWheels,companyName,collectionName,toyNumber,barcode,CountryMade,noOfDoors,price){
     this.name =name;
@@ -26,3 +26,4 @@ function HotWheel(name,year,color,numberOfWheels,companyName,collectionName,toyN
 
 }
 
+const HotWheel1 = new HotWheel("punk Rod",2023,"black and orange",4,"Hot Wheeks","Rod Squad","HRY48",2708412013,"Malasiya",2,2.99)
