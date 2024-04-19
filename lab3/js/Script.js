@@ -17,3 +17,7 @@ async function initMap() {
   trafficLayer.setMap(map);
 
 }
+
+//referecence 
+//https://developers.google.com/maps/documentation/javascript
+//https://youtu.be/CdDXbvBFXLY?si=tptHOKGzt-aEdzLS
