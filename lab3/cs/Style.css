@@ -1,0 +1,7 @@
+html{
+    box-sizing: border-box;
+}
+#map{
+    width: 80%;
+    height: 80%;
+}
