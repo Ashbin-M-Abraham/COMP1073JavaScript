@@ -1,7 +1,7 @@
-html{
-    box-sizing: border-box;
-}
-#map{
+/* Style the map container */
+#map {
+    height: 400px;
     width: 80%;
-    height: 80%;
-}
+  }
+  
+  

@@ -1,20 +1,19 @@
-//iniInitialize Google Maps and Add the location of Georgian College
 let map;
 
 async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
+  // Map initialization
+  map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 44.412833478479456, lng: -79.66962453538743 },
-    zoom: 15,
+    zoom: 15
   });
-  //add a  marker to represent the college's location
+  // add marker
   new google.maps.Marker({
-    position: { lat: 44.412833478479456, lng: -79.66962453538743 },
-    title: "Georgian College",
+    position :{ lat: 44.412833478479456, lng: -79.66962453538743 },
+    title:"Georgian College",
     map: map
   });
-  
-}
+  //create  traffic layer
+  const trafficLayer = new google.maps.TrafficLayer();
+  trafficLayer.setMap(map);
 
-initMap();
+}
